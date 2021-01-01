@@ -4,7 +4,7 @@
       <div v-for="item in filteredprice" :key="item.id" class="item">
         <div class="img-contain">
           <NuxtLink :to="`product/${item.id}`">
-            <img :src="`/products/${item.img}`" />
+            <img :src="`${item.img}`" />
           </NuxtLink>
         </div>
         <star-rating
@@ -75,6 +75,7 @@ export default {
 .content {
   height: 100%;
   width: 100%;
+ 
 }
 
 .img-contain {

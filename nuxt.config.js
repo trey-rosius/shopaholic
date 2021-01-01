@@ -12,12 +12,17 @@ export default {
     ]
   },
 
+   /*
+   ** Customize the progress-bar color
+   */
+  loading: { color: '#fff' },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['normalize.css', { src: '~/assets/main.scss', lang: 'sass' }],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    `~/plugins/currency-filter.js`,"~/plugins/get_products.server.js",
+    `~/plugins/getproducts.server.js`,`~/plugins/currency-filter.js`
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

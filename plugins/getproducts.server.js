@@ -1,4 +1,4 @@
 export default async({
-    store }) =>{
+    store }) => {
         await store.dispatch('getProducts')
     }

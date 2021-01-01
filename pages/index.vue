@@ -4,20 +4,32 @@
       <gradient-background/>
 
 <div class="grids">
+    <app-swiper/>
      <store-gridview :data="products" />
-  
-  </div>    
+  <app-footer />  
+
+  </div>  
+    
   </div>
+
+
+
+
 </template>
 
 <script>
+import AppSwiper from '@/components/AppSwiper.vue';
+import AppFooter from "~/components/AppFooter.vue";
+import AppNav from "~/components/AppNav.vue";
 import GradientBackground from '@/components/GradientBackground.vue';
 import { mapState } from "vuex";
 import StoreGridview from "~/components/StoreGridview.vue";
   export default {
     components:{
       GradientBackground,
-       AppStoreGrid
+       StoreGridview,
+       AppFooter,
+ 
       },
     
   computed: {
@@ -32,6 +44,7 @@ import StoreGridview from "~/components/StoreGridview.vue";
   }
 .grids{
   position: absolute;
+ 
   top:200px;
   left: 10px;
   }

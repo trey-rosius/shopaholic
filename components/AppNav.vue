@@ -15,10 +15,7 @@
         <li class="nav__link">
           <nuxt-link to="/men">Contact</nuxt-link>
         </li>
-        <li class="nav__link">
-         
-          <nuxt-link to="/cart">Cart</nuxt-link>
-        </li>
+       
       </ul>
 
       <ul class="nav_icons">
@@ -26,6 +23,7 @@
           <nuxt-link exact to="/cart"><search-icon/></nuxt-link>
         </li>
         <li class="icons">
+        
           <nuxt-link exact to="/cart"><cart-icon/></nuxt-link>
         </li>
       </ul>
@@ -36,11 +34,16 @@
 <script>
 import SearchIcon from '@/components/SearchIcon.vue';
 import CartIcon from '@/components/CartIcon.vue';
+import { mapGetters } from "vuex";
+
 
 export default {
   components:{
     SearchIcon,
     CartIcon
+  },
+  computed: {
+    ...mapGetters(["cartCount"])
   }
   
 };
@@ -52,7 +55,7 @@ header {
 
   flex-direction: row;
   align-items: center;
-  color: white;
+
   width:100vw;
  
   
@@ -123,6 +126,23 @@ transition: all .2s;
    
 
   }
+
+.carttotal {
+  position: absolute;
+  border-radius: 1000px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  padding: 3px;
+  top: -18px;
+  right: -5px;
+  width: 25px;
+  text-align: center;
+  height: 25px;
+  font-size: 10px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
 
 
 </style>

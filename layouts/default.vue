@@ -4,15 +4,18 @@
      <Nuxt />
      <div class="secondary">
      <app-nav/>
+   
      </div>
 
   </div>
 </template>
 <script>
 import AppNav from '@/components/AppNav.vue';
+import AppFooter from "~/components/AppFooter.vue";
 export default {
   components:{
-    AppNav
+    AppNav,
+     AppFooter
 }
 }
 </script>

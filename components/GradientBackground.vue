@@ -2,7 +2,7 @@
   <svg xmlns="http://www.w3.org/2000/svg"
     viewBox="-1 -4 15 5"
     class="svg_bg"
-    :aria-labelledby="iconName"
+    :aria-labelledby="iconname"
     role="presentation"
   >
      <defs>
