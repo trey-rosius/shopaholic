@@ -3,16 +3,26 @@
 
       <gradient-background/>
 
-    <span class="some-text">What about this part</span>
+<div class="grids">
+     <store-gridview :data="products" />
+  
+  </div>    
   </div>
 </template>
 
 <script>
 import GradientBackground from '@/components/GradientBackground.vue';
+import { mapState } from "vuex";
+import StoreGridview from "~/components/StoreGridview.vue";
   export default {
     components:{
-      GradientBackground
-      }
+      GradientBackground,
+       AppStoreGrid
+      },
+    
+  computed: {
+    ...mapState(["products"])
+  }
   }
 </script>
 
@@ -20,7 +30,7 @@ import GradientBackground from '@/components/GradientBackground.vue';
 .bg_header{
  position: relative;
   }
-.some-text{
+.grids{
   position: absolute;
   top:200px;
   left: 10px;

@@ -17,6 +17,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    `~/plugins/currency-filter.js`,"~/plugins/get_products.server.js",
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
