@@ -8,6 +8,16 @@ export const state = () =>({
 });
 
 
+export const mutations ={
+ addToCart:(state,formOutput) =>{
+     formOutput.id = uuidv4();
+     state.cart.push(formOutput);
+ },
+    updateProducts:(state,data) =>{
+        state.products = data;
+    }
+}
+
 export const actions ={
 
     async getProducts({
@@ -25,6 +35,12 @@ export const actions ={
                 }
                
             )
+            .then(response => response.json())
+            .then(data =>{
+                commit("updateProducts",data);
+            });
+        }catch(err){
+            console.log(err);
         }
     }
 }
