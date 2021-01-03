@@ -10,7 +10,7 @@
           :rating="product.star_rating"
           :star-size="15"
           :show-rating="false"
-          active-color="#000"
+          active-color="#d57eeb"
           style="margin: 5px 0"
         ></star-rating>
         <h4 class="price">{{ product.price | dollar }}</h4>
@@ -68,7 +68,7 @@
       <!-- maybe an image of a person? -->
       <star-rating
         :rating="product.star_rating"
-        active-color="#000"
+        active-color="#d57eeb"
         :star-size="15"
         :show-rating="false"
         style="margin: 5px 0"
@@ -146,6 +146,14 @@ export default {
   display: flex;
 }
 
+.purchase{
+  border:none;
+  padding:10px 10px;
+  border-radius: 5px;
+  background-color: #d57eeb;
+  color: white;
+}
+
 input,
 select {
   width: 60px;
@@ -158,6 +166,8 @@ select {
   background: black;
   border-color: black;
   color: white;
+  
+  border:none;
   font-size: 20px;
   width: 45px;
 }

@@ -9,7 +9,7 @@
         </div>
         <star-rating
           :rating="item.star_rating"
-          active-color="#000"
+          active-color="#d57eeb"
           :star-size="15"
           :show-rating="false"
           style="margin: 5px 0"
@@ -17,7 +17,7 @@
         <h3>{{ item.name }}</h3>
         <h4 class="price">{{ item.price | dollar }}</h4>
         <NuxtLink :to="`product/${item.id}`">
-          <button class="multi-item">View Item ></button>
+          <button class="view-item">View</button>
         </NuxtLink>
       </div>
     </transition-group>
@@ -87,7 +87,15 @@ export default {
     width: 100%;
   }
 }
-
+.view-item{
+ border: none;
+  width:100px;
+  padding:10px 20px;
+  border-radius: 10px;
+  &:hover{
+    background-color: #d57eeb;
+  }
+}
 .item {
   max-height: 500px;
   display: flex;

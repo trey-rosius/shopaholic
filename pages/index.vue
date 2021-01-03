@@ -4,7 +4,6 @@
       <gradient-background/>
 
 <div class="grids">
-    <app-swiper/>
      <store-gridview :data="products" />
   <app-footer />  
 
@@ -18,7 +17,7 @@
 </template>
 
 <script>
-import AppSwiper from '@/components/AppSwiper.vue';
+
 import AppFooter from "~/components/AppFooter.vue";
 import AppNav from "~/components/AppNav.vue";
 import GradientBackground from '@/components/GradientBackground.vue';
@@ -29,7 +28,9 @@ import StoreGridview from "~/components/StoreGridview.vue";
       GradientBackground,
        StoreGridview,
        AppFooter,
- 
+  
+     
+    
       },
     
   computed: {
