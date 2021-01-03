@@ -1,6 +1,8 @@
 # shopaholic(Web Application)
 
 A serverless web e-commerce application built with Vue Js, Nuxt using AWS it's backend.
+Vue Javascript(https://vuejs.org) and Nuxt(https://nuxtjs.org) are absolutely amazing. You should definitely check them out.
+
 Actually, it's just a sample application, show casing the speed at which anybody can build full stack applications.
 You can find the mobile version here
 https://github.com/trey-rosius/shopaholic_mobile
@@ -21,9 +23,9 @@ https://github.com/sdras/ecommerce-netlify
 
 Here are the screens for the applications
 
-![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/assets/web_screen1.png)
-![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/assets/web_screen2.png)
-![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/assets/web_screen3.png)
+![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/static/web_screen1.png)
+![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/static/web_screen2.png)
+![alt text](https://raw.githubusercontent.com/trey-rosius/shopaholic_web/master/static/web_screen3.png)
 
 ## Build Setup
 
