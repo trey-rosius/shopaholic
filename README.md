@@ -1,5 +1,8 @@
 # shopaholic(Web Application)
 
+#LIVE DEMO
+https://naughty-minsky-e0b706.netlify.app/
+
 A serverless web e-commerce application built with Vue Js, Nuxt using AWS it's backend.
 Vue Javascript(https://vuejs.org) and Nuxt(https://nuxtjs.org) are absolutely amazing. You should definitely check them out.
 
