@@ -15,7 +15,7 @@
           style="margin: 5px 0"
         ></star-rating>
         <h3>{{ item.name }}</h3>
-        <h4 class="price">{{ item.price | dollar }}</h4>
+        <h4 class="price"> XAF {{ item.price }}</h4>
         <NuxtLink :to="`product/${item.id}`">
           <button class="view-item">View</button>
         </NuxtLink>
@@ -27,7 +27,7 @@
       <h3>Filter by Price:</h3>
       <p style="margin-top: 5px">
         Max Price
-        <strong>${{ pricerange }}</strong>
+        <strong>XAF {{ pricerange }}</strong>
       </p>
       <input
         class="slider"
@@ -38,8 +38,8 @@
         :max="max"
         step="0.1"
       />
-      <span class="min">${{ min }}</span>
-      <span class="max">${{ max }}</span>
+      <span class="min">XAF {{ min }}</span>
+      <span class="max">XAF {{ max }}</span>
     </aside>
   </div>
 </template>
@@ -56,8 +56,8 @@ export default {
   data() {
     return {
       min: 0,
-      max: 200,
-      pricerange: 200
+      max: 2000,
+      pricerange: 60000
     };
   },
   computed: {
